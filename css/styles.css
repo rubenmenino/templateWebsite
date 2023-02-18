@@ -602,6 +602,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  
 }
 
 .img-thumbnail {
@@ -616,6 +617,8 @@ progress {
 .figure {
   display: inline-block;
 }
+
+
 
 .figure-img {
   margin-bottom: 0.5rem;

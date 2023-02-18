@@ -1,0 +1,22 @@
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    video {
+      max-width: 80%;
+    }
+  }
+  
+
+  .carousel-item img {
+    display: inline-block;
+    width: 33.33%;
+    margin: 0;
+    padding: 10px;
+    vertical-align: top;
+  }
+  
