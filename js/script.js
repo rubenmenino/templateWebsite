@@ -25,7 +25,7 @@ function validatePhone(){
         return false;
     }
 
-    if(!phone.match(/^[0-9]{9}$/)) {
+    if(!phone.match(/^(91|92|93|96)\d{7}$/)) {
         phoneError.innerHTML = "Coloque um contacto correto!";
         return false;
     }
@@ -53,7 +53,7 @@ function validateEmail(){
 
 function validateMessage(){
     var message = document.getElementById("contact-message").value;
-    var required = 10;
+    var required = 30;
     var left = required - message.length;
 
     if(left > 0) {
