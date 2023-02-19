@@ -42,6 +42,7 @@
 Tooplate 2119 Gymso Fitness
 https://www.tooplate.com/view/2119-gymso-fitness
 -->
+<script src="https://kit.font-awesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
@@ -190,14 +191,19 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="geraldino-modal-label">Informações sobre Geraldino</h5>
+                                <h5 class="modal-title" id="geraldino-modal-label"><b>Mais informações sobre Geraldino</b></h5><br><br>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Adicionar informações adicionais , (como experiência, formação académica e outras
-                                    informações relevantes.)</p>
+                                <p>- Mestre em Treino de Alto Rendimento (Faculdade de Motricidade Humana)<br><br>
+
+                                    - Personal Trainer (especialização em exercício clínico para ombro, coluna e joelho pela Clínica Das Conchas)<br><br>
+                                    
+                                    - Técnico de Exercício especializado em treino para diminuição da massa gorda e aumento da massa muscular<br><br>
+                                    
+                                    - Exos Performance Specialist Course</p>
                             </div>
                         </div>
                     </div>
@@ -480,22 +486,31 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Precisas de ajuda?</h2>
 
                     <form action="https://formspree.io/f/mpzedqvk" method="POST" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" id="my-form" role="form">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Nome*">
-                       
-                        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail*">
-                       
-                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Contacto telefónico*">
-                        
-                        <textarea class="form-control" rows="5" name="message" id="message" placeholder="Mensagem*"></textarea>
-                       
+
+                  
+                        <input type="text" class="form-control"  name="name" id="contact-name" onkeyup="validateName()" placeholder="Nome*">
+                       <span id="name-error"></span>
+
+               
+                        <input type="email" class="form-control" name="email" id="contact-email" onkeyup="validateEmail()" placeholder="E-mail*">
+                        <span id="email-error"></span>
+
+
+                        <input type="tel" class="form-control" name="phone"  id="contact-phone" onkeyup="validatePhone()" placeholder="Contacto telefónico*">
+                        <span id="phone-error"></span>
+
+
+                        <textarea class="form-control" rows="5" name="message" id="contact-message" onkeyup="validateMessage()" placeholder="Mensagem*"></textarea>
+                        <span id="message-error"></span>
+
+
                         <div class="button-area">
-                          <button type="submit" class="form-control" id="submit-button" name="submit" onclick="showSuccessMessage()">Enviar mensagem</button>
-                          
+                          <button type="submit" class="form-control success" id="submit-button" name="submit" >Enviar mensagem</button>
                         </div>
+                        <span id="submit-error"></span>
                       </form>
-                      <div class="success-message" id="status" style="display: none;">
-                        Mensagem enviada com sucesso!
-                      </div>
+
+                      
                 </div>
 
                 <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
@@ -555,12 +570,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
     <script src="js/custom.js"></script>
     <script src="js/observar.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        function showSuccessMessage() {
-          var successMessage = document.querySelector('.success-message');
-          successMessage.style.display = 'block';
-        }
-      </script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

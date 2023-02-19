@@ -211,3 +211,42 @@
   border-radius: 5px;
   margin-top: 10px;
 }
+
+
+
+#name-error,
+#email-error,
+#phone-error,
+#message-error {
+  display: inline;
+  margin-top: 100px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error {
+  color: red;
+}
+
+
+#name-error i,
+#email-error i,
+#phone-error i,
+#message-error i {
+  color: seagreen;
+}
+
+#submit-error {
+  color: red;
+}
+
+.success {
+  color: #28a745; /* cor verde */
+}
+
+.sent {
+  background-color: green;
+  color: white;
+  cursor: default;
+}
+

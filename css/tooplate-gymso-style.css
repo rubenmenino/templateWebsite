@@ -532,7 +532,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .form-control {
     border-radius: var(--border-radius-small);
-    margin: 1.3rem 0;
+    margin: 0.3rem 0;
   }
 
   .form-control:focus {
